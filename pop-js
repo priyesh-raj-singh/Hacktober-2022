@@ -1,0 +1,8 @@
+const popups = document.querySelectorAll(".popup");
+for(let i = 0 ; i<popups.length ; i++){
+    console.log(popups[i]);
+    popups[i].addEventListener("click" , function(){
+        let outputText = this.getAttribute("data-message");
+        console.log(outputText);
+    })
+}
